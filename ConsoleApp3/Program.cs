@@ -11,6 +11,7 @@ namespace ConsoleApp3
     {
         static void Main(string[] args)
         {
+
             // Создание экземпляра TodoList для управления задачами
             var todoList = new TodoList();
             do
@@ -27,9 +28,9 @@ namespace ConsoleApp3
                 // Обработка выбора пользователя
                 switch (key.KeyChar) //получение значения символа
                 {
+                    
                     case '1':
-                        {
-                            // Чтение и добавление новой задачи
+                        { 
                             var task = ReadTask();
                             todoList.AddTask(task);
                             break;
